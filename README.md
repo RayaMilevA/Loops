@@ -1,5 +1,7 @@
 # Loops
 IS - First Course 2023
+
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -166,10 +168,7 @@ int main()
 	Task
 
 	 int n = 0;
-	 cin >> n;
-
-for (int i = 2; i <= n; i++)
-{
+	 cin >> n;for (int i = 2; i <= n; i++){
 	int count = 0;
 
 	while (n % i == 0) {
@@ -279,8 +278,7 @@ for (int i = 2; i <= n; i++)
 	cout << c;
 
 
-	Task 0 
-Да се напише програма, която след въвеждане на 10 числа от потребителя пресмята тяхната сума!
+	Task 0 //Да се напише програма, която след въвеждане на 10 числа от потребителя пресмята тяхната сума!
 
 	int n;
 	int total = 0;
@@ -425,20 +423,14 @@ for (int i = 2; i <= n; i++)
     cin >> base;
     cin >> exponent;
 
-    bool negativeExponent = false;
-
-// Проверка за отрицателна степен
+    bool negativeExponent = false;// Проверка за отрицателна степен
     if (exponent < 0) {
 	    exponent = -exponent;
 	    negativeExponent = true;
-    }
-
-// Изчисляване на степента
+    }// Изчисляване на степента
     for (int i = 0; i < exponent; i++) {
 	    result *= base;
-    }
-
-// Ако степента е отрицателна, връщаме обратната стойност
+    }// Ако степента е отрицателна, връщаме обратната стойност
     if (negativeExponent) {
 	    result = 1.0 / result;
     }

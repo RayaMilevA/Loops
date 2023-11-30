@@ -2,6 +2,7 @@
 IS - First Course 2023
 
 
+```
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -168,12 +169,13 @@ int main()
 	Task
 
 	 int n = 0;
-	 cin >> n;for (int i = 2; i <= n; i++){
-	int count = 0;
+	 cin >> n;
+              for (int i = 2; i <= n; i++){
+	           int count = 0;
 
-	while (n % i == 0) {
-		count++;
-		n /= i;
+	               while (n % i == 0) {
+		          count++;
+		           n /= i;
 	}
 	if (count >= 1)
 	{
@@ -235,29 +237,6 @@ int main()
 		cout << total;
 	}
 	return 0;
-
-
-	Task
-
-	int n;
-	int k;
-	cin >> n >> k;
-
-	if (k > n)
-	{
-		int temp = n;
-		n = k;
-		k = temp;
-
-		while (k != 0)
-		{
-			int mod = n % k;
-			n = k;
-			k = mod;
-		}
-
-	}
-	cout << n << endl;
 
 
 	Task
